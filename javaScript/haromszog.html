@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function szamol(){
+            var a = document.getElementById("alap").value
+            var b = document.getElementById("magassag").value
+            var c=(a*b)/2
+            
+            document.getElementById("kiir").innerHTML=c
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <input id="alap" type="text" value="alap">
+        <input id="magassag" type="text" value="magasság">
+        <input type="button" onclick="szamol(this)" value="gomb">
+    </form>
+    <p>A 3szög területe: <span id="kiir"></span></p>
+</body>
+</html>
